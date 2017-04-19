@@ -1,0 +1,26 @@
+.star {
+    color: goldenrod;
+    font-size: 1.9rem;
+    line-height: 2.0rem;
+    position: relative;
+    padding: 0 0.7rem;
+}
+
+.star::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '\2606';
+    cursor: pointer;
+}
+
+.star.rated::before {
+    content: '\2605' !important;
+}
+
+img {
+    display: inline;
+    height: 3rem;
+    width: 3rem;
+    float: left;
+}

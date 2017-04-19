@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: file: assets-library: ;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css"> </head>
+
+<body>
+    <header class="bar bar-nav content-padded">
+        <a id="addReview" href="#picModal" class="icon icon-star-filled pull-right">Add </a>
+        <h1 class="title">ReviewR</h1> </header>
+    <div class="content">
+        <ul id="reviewList" class="table-view">
+<!--
+            <li class="table-view-cell media">
+                <a href="#delModal" class="navigate-right"> <img class="media-object pull-left" src="http://placehold.it/42x42">
+                    <div class="media-body"> Item 1
+                        <p>blah blah</p>
+                    </div>
+                </a>
+            </li>
+-->
+        </ul>
+    </div>
+    <div id="picModal" class="modal">
+        <header class="bar bar-nav">
+            <a id="closePic" class="icon icon-close pull-right" href="#picModal"></a>
+            <h1 class="title">Add Review</h1> </header>
+        <div class="content">
+            <form class="content-padded">
+                <input id="itemForm" type="text" placeholder="Item"> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span>
+                <button id="takePicBtn" class="btn btn-positive btn-block icon icon-play"> Take Picture</button>
+                <button id="cancelBtn" class="btn btn-block icon icon-close"> Cancel</button>
+                <button id="saveBtn" class="btn btn-primary btn-block icon icon-check"> Save</button>
+            </form>
+        </div>
+    </div>
+    <div id="delModal" class="modal">
+        <header class="bar bar-nav">
+            <a id="closeDel" class="icon icon-close pull-right" href="#delModal"></a>
+            <h1 class="title">ReviewR</h1> </header>
+<!--        <div class="content">-->
+            <div id="delContent" class="content">
+                <!--           ADD STUFF-->
+            </div>
+            <div class="bar bar-standard bar-footer-secondary">
+                <button id="delBtn" class="btn btn-negative btn-block icon icon-trash"> Delete Review</button>
+            </div>
+<!--        </div>-->
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/ratchet.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
